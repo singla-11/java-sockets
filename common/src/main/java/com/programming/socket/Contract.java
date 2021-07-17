@@ -1,4 +1,4 @@
-package util;
+package com.programming.socket;
 
 public class Contract {
 
@@ -7,5 +7,4 @@ public class Contract {
     public static String breakpoint() {
         return breakpoint;
     }
-
 }

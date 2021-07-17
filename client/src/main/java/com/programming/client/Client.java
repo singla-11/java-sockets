@@ -1,7 +1,6 @@
-package client;
+package com.programming.client;
 
-import util.SocketUtil;
-
+import com.programming.socket.SocketUtil;
 import java.io.IOException;
 import java.net.Socket;
 
@@ -21,5 +20,4 @@ public class Client {
     public void sendConsoleInputToServer(String breakpoint) {
         SocketUtil.sourceOutputStreamFromConsole(socket, breakpoint);
     }
-
 }

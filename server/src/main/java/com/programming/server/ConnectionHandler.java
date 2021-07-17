@@ -1,8 +1,7 @@
-package server;
+package com.programming.server;
 
-import util.Contract;
-import util.SocketUtil;
-
+import com.programming.socket.Contract;
+import com.programming.socket.SocketUtil;
 import java.io.IOException;
 import java.net.Socket;
 
@@ -16,5 +15,4 @@ public class ConnectionHandler {
             ex.printStackTrace();
         }
     }
-
 }

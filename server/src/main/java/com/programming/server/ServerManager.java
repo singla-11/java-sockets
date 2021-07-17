@@ -1,7 +1,6 @@
-package server;
+package com.programming.server;
 
-import util.CommandLineArgument;
-
+import com.programming.socket.CommandLineArgument;
 import java.io.IOException;
 import java.net.Socket;
 
@@ -21,8 +20,7 @@ public class ServerManager {
 
         while (server.isRunning()) {
             Socket socket = server.connection();
-            if (socket != null)
-                handler.handle(socket);
+            if (socket != null) handler.handle(socket);
         }
     }
 
@@ -30,5 +28,4 @@ public class ServerManager {
         Runtime r = Runtime.getRuntime();
         r.addShutdownHook(new ServerShutdownHook(server));
     }
-
 }

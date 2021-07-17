@@ -1,4 +1,4 @@
-package server;
+package com.programming.server;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -41,6 +41,4 @@ public class Server {
             ex.printStackTrace();
         }
     }
-
 }
-

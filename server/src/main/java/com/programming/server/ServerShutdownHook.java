@@ -1,4 +1,4 @@
-package server;
+package com.programming.server;
 
 public class ServerShutdownHook extends Thread {
 
@@ -11,5 +11,4 @@ public class ServerShutdownHook extends Thread {
     public void run() {
         server.shutdown();
     }
-
 }
