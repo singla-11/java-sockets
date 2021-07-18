@@ -2,7 +2,12 @@
 target/
 
 common/common.iml
+
 server/server.iml
+server/dependency-reduced-pom.xml
+
 client/client.iml
+client/dependency-reduced-pom.xml
+
 java-sockets.iml
 
