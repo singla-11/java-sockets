@@ -1,6 +1,6 @@
 package com.programming.server;
 
-import com.programming.socket.CommandLineArgumentUtil;
+import com.programming.socket.util.CommandLineArgumentUtil;
 import java.io.IOException;
 import java.net.Socket;
 

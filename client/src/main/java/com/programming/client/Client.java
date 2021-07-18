@@ -1,6 +1,6 @@
 package com.programming.client;
 
-import com.programming.socket.SocketUtil;
+import com.programming.socket.util.SocketUtil;
 import java.io.IOException;
 import java.net.Socket;
 import lombok.extern.slf4j.Slf4j;

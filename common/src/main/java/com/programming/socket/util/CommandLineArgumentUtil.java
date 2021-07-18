@@ -1,4 +1,4 @@
-package com.programming.socket;
+package com.programming.socket.util;
 
 public class CommandLineArgumentUtil {
 
