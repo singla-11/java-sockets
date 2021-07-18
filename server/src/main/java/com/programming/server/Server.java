@@ -24,6 +24,14 @@ public class Server {
         try {
             Socket socket = server.accept();
             log.info("Connection request accepted");
+
+            if (log.isDebugEnabled()) {
+                log.debug("Inet Address of remote machine: {}", socket.getInetAddress());
+                log.debug("Inet Address of local machine: {}", socket.getLocalAddress());
+                log.debug("Port of remote machine: {}", socket.getPort());
+                log.debug("Port of local machine: {}", socket.getLocalPort());
+            }
+
             return socket;
         } catch (IOException ex) {
             ex.printStackTrace();
