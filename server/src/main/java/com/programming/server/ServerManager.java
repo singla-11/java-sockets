@@ -1,6 +1,6 @@
 package com.programming.server;
 
-import com.programming.socket.CommandLineArgument;
+import com.programming.socket.CommandLineArgumentUtil;
 import java.io.IOException;
 import java.net.Socket;
 
@@ -9,7 +9,7 @@ public class ServerManager {
     public static void main(String[] args) {
         Server server;
         try {
-            server = new Server(Integer.parseInt(System.getProperty(CommandLineArgument.HOST)));
+            server = new Server(CommandLineArgumentUtil.serverPort());
         } catch (IOException ex) {
             ex.printStackTrace();
             return;

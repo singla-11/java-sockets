@@ -5,10 +5,12 @@ import java.net.Socket;
 
 public class SocketUtil {
 
+    private static final String EMPTY_STRING = "";
+
     public static void printInputStream(Socket socket, String breakpoint) {
         try (DataInputStream in =
                 new DataInputStream(new BufferedInputStream(socket.getInputStream()))) {
-            String line = "";
+            String line = EMPTY_STRING;
 
             while (!line.equals(breakpoint)) {
                 try {
@@ -27,7 +29,7 @@ public class SocketUtil {
     public static void sourceOutputStreamFromConsole(Socket socket, String breakpoint) {
         try (DataOutputStream out = new DataOutputStream(socket.getOutputStream())) {
             try (BufferedReader input = new BufferedReader(new InputStreamReader(System.in))) {
-                String line = "";
+                String line = EMPTY_STRING;
 
                 while (!line.equals(breakpoint)) {
                     line = input.readLine();
