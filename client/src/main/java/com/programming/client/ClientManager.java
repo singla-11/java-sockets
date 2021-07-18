@@ -1,6 +1,6 @@
 package com.programming.client;
 
-import com.programming.socket.CommandLineArgumentUtil;
+import com.programming.socket.util.CommandLineArgumentUtil;
 
 public class ClientManager {
 
